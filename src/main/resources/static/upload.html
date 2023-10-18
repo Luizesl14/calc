@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Upload PDF</title>
+</head>
+<body>
+<h2>Faça o upload de um arquivo PDF</h2>
+<form method="post" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".pdf" required />
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>

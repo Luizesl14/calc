@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Resultados</title>
+</head>
+<body>
+<h2>Resultados do cálculo de áreas CMYK</h2>
+<table border="1">
+  <thead>
+  <tr>
+    <th>Componente CMYK</th>
+    <th>Área (metros quadrados)</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="cmykArea : ${cmykAreas}">
+    <td th:text="${cmykArea.component}"></td>
+    <td th:text="${cmykArea.area}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
